@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background-color: #1b1b1b;
+}
+
+.watch {
+    justify-content: center;
+    margin-top: 200px;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.prof {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.p1 img,
+.p2 img,
+.p3 img {
+    align-items: center;
+    margin: 30px 20px 10px 20px;
+    border: 1px none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-size: large;
+    font-weight: 500;
+    padding: 6px 25px;
+    border: 1px solid grey;
+    background: rgba(20, 20, 20, 0.6);
+    color: grey;
+    cursor: pointer;
+}
+
+p{
+    text-align: center;
+    color: grey;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.p1 img:hover, .p2 img:hover, .p3 img:hover{
+    border: 2px solid white;
+}
+
+.p1:hover p, .p2:hover p, .p3:hover p{
+    color: white;
+}
+
+.btn:hover{
+    color: white;
+    border-color: white;
+}

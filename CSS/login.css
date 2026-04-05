@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background-color: #311315;
+}
+
+nav {
+    height: 50px;
+    position: relative;
+    background-color: #311315;
+}
+
+.logo {
+    padding-left: 10%;
+    padding-right: 60%;
+    padding-top: 15px;
+    margin-top: 11px;
+    display: inline-block;
+}
+
+.sepa {
+
+    height: 1px;
+    background: #4b2e2f;
+    margin-top: 40px;
+}
+
+.main-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+
+h6 {
+    color: #c3b9ba;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 493px;
+}
+
+.email {
+    margin-top: 20px;
+    margin-left: 493px;
+    height: 50px;
+    width: 430px;
+    font-size: 17px;
+    background: rgba(20, 20, 20, 0.6);
+    color: white;
+    border-color: #636161;
+    border-width: 2px;
+    border-radius: 3px;
+    border-style: solid;
+}
+
+.con {
+    padding: 13px 174px 13px 174px;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+    background-color: #c0181f;
+    text-align: center;
+    border: 1px none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn {
+    margin-left: 493px;
+    margin-top: 24px;
+}
+
+p {
+    color: white;
+}
+
+p:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.help {
+    margin-top: 60px;
+    margin-left: 493px;
+}
