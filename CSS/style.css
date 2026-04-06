@@ -14,12 +14,14 @@ body {
 .main {
     background-image: url(../assets/images/backdrop.jpg);
     background-size: cover;
-    height: 690px;
+    height: 43.1rem;
+    /*690px*/
     position: relative;
 }
 
 .box {
-    height: 690px;
+    height: 43.1rem;
+    /*690px*/
     width: 100%;
     position: absolute;
     background-color: black;
@@ -29,17 +31,20 @@ body {
 
 
 nav {
-    height: 100px;
+    height: 6.2rem;
+    /*100*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
     position: relative;
     z-index: 10;
+    margin-bottom: 10px;
 }
 
 .logo img {
-    width: 150px;
+    width: 9.3rem;
+    /*150*/
 }
 
 .nav-right {
@@ -52,7 +57,8 @@ nav {
 .text {
     position: relative;
     height: 65%;
-    padding-top: 25px;
+    padding-top: 1.5rem;
+    /*25*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,13 +67,14 @@ nav {
 }
 
 .main-text {
-    font-size: 60px;
+    font-size: 3.7rem; /*60*/
     font-weight: 1000;
 }
 
 h5 {
     margin: 17px;
-    font-size: 20px;
+    font-size: 1.2rem;
+    /*20*/
     font-weight: 500;
 }
 
@@ -78,15 +85,15 @@ h6 {
     margin-bottom: 20px;
 }
 
-
 input {
-    height: 55px;
-    width: 350px;
+    height: 55px; /*55*/
+    width: 350px; /*350*/
     font-size: 17px;
     background: rgba(20, 20, 20, 0.6);
     color: white;
     border: 2px solid red;
     border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 
@@ -111,7 +118,7 @@ input {
 }
 
 .gs {
-    padding: 12px 25px 17px 25px;
+    padding: 13px 25px 17px 25px;
     font-size: x-large;
 }
 
@@ -119,5 +126,6 @@ input {
 .sep {
     height: 3px;
     background: rgb(174, 3, 3);
-    margin-top: 116px;
+    margin-top: 7.2rem;
+    /*116*/
 }
