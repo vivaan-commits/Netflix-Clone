@@ -15,6 +15,7 @@ body {
 nav {
     height: 65px;
     background-color: #101010;
+    width: 100%;
 }
 
 nav ul {
@@ -23,10 +24,11 @@ nav ul {
     list-style: none;
     padding: 0 40px;
     height: 100%;
+    width: 100%;
 }
 
 .logo {
-    margin-right: 40px;
+    margin-right: 2.5rem;
 }
 
 .btn,
@@ -46,7 +48,6 @@ nav ul {
 
 .search {
     margin-left: auto;
-    margin-right: 15px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -70,27 +71,23 @@ nav ul {
 
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
-  padding: 20px 40px;
-  margin-top: 25px;
-  overflow: visible;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 20px 40px;
+    margin-top: 25px;
 }
 
 .gallery img {
-  width: 100%;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .gallery img:hover {
-  transform: scale(1.1);
-  z-index: 2;
+    transform: scale(1.08);
 }
 
-.genre,
 .title {
     display: inline;
 }
@@ -99,16 +96,11 @@ nav ul {
     font-size: 30px;
     font-weight: 600;
     color: white;
+    
 }
 
 .heading {
-    margin-top: 100px;
+    margin-top: 1.8rem;
+    margin-left: 3.1rem;
 }
-
-.genre{
-    color: grey;
-    font-size: 28px;
-    margin-left: 40px;
-}
-
 

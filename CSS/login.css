@@ -33,14 +33,14 @@ nav {
 }
 
 .main-text {
-    margin-top: 50px;
-    margin-right: 20px;
-    font-size: 30px;
+    margin-top: 3.1rem; /*50*/
+    margin-right: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: white;
     width: 100%;
     max-width: 600px;
-    margin-left: 182px;
+    margin-left: 11.3rem;
 
 }
 
@@ -52,7 +52,7 @@ h6 {
     margin-top: 10px;
     width: 100%;
     max-width: 600px;
-    margin-left: 168px;
+    margin-left: 10.5rem;
 }
 
 .res {
@@ -90,7 +90,6 @@ h6 {
 }
 
 .btn {
-    /* margin-left: 493px; */
     margin-top: 24px;
 }
 
@@ -104,8 +103,8 @@ p:hover {
 }
 
 .help {
-    margin-top: 60px;
+    margin-top: 3.7rem;
     width: 100%;
     max-width: 600px;
-    margin-left: 168px;
+    margin-left: 10.5rem;
 }

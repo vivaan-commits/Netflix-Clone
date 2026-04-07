@@ -15,6 +15,7 @@ body {
 nav {
     height: 65px;
     background-color: #101010;
+    width: 100%;
 }
 
 nav ul {
@@ -23,10 +24,11 @@ nav ul {
     list-style: none;
     padding: 0 40px;
     height: 100%;
+    width: 100%;
 }
 
 .logo {
-    margin-right: 40px;
+    margin-right: 2.5rem; /*40*/
 }
 
 .btn,
@@ -35,7 +37,7 @@ nav ul {
     color: white;
     border: none;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 1.2rem; /*20*/
 }
 
 .btn:hover,
@@ -46,6 +48,7 @@ nav ul {
 
 .search {
     margin-left: auto;
+    margin-right: 15px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -69,23 +72,27 @@ nav ul {
 
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
-    padding: 20px 40px;
-    margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  padding: 20px 40px;
+  margin-top: 25px;
+  overflow: visible;
 }
 
 .gallery img {
-    width: 100%;
-    border-radius: 6px;
-    cursor: pointer;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .gallery img:hover {
-    transform: scale(1.08);
+  transform: scale(1.1);
+  z-index: 2;
 }
 
+.genre,
 .title {
     display: inline;
 }
@@ -94,11 +101,16 @@ nav ul {
     font-size: 30px;
     font-weight: 600;
     color: white;
-    
 }
 
 .heading {
-    margin-top: 30px;
-    margin-left: 50px;
+    margin-top: 10vh;
 }
+
+.genre{
+    color: grey;
+    font-size: 1.7rem;
+    margin-left: 2.5rem;
+}
+
 
