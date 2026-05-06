@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="CSS/login.css">
 </head>
 
-<body>
+<body onload="get_mail();">
     <nav>
         <ul>
             <li class="logo"><a href="index.html"><img src="assets/images/logo.svg" alt="NETFLIX" width="150px" /></a>
@@ -38,28 +38,7 @@
         </div>
     </div>
 
-    <script>
-        function login() {
-            let mail = document.getElementById("mail").value;
-            let passwd = document.getElementById("passwd").value;
-            let users = JSON.parse(localStorage.getItem("users")) || [];
-
-            let found = false;
-            for (let i = 0; i < users.length; i++) {
-                if (users[i].email === mail && users[i].password === passwd) {
-                    found = true;
-                    break;
-                }
-
-            }
-            if (found) {
-                window.location.href = "profiles.html";
-            }
-            else {
-                alert("Invalid Credentials");
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

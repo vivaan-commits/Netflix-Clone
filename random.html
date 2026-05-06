@@ -14,7 +14,8 @@
 
     <nav>
         <ul>
-            <li class="logo"><a href="index.html"><img src="assets/images/logo.svg" alt="NETFLIX" width="100px" /></a></li>
+            <li class="logo"><a href="index.html"><img src="assets/images/logo.svg" alt="NETFLIX" width="100px" /></a>
+            </li>
             <li><button class="btn1">Home</button></li>
             <li><button class="btn">Shows</button></li>
             <li><button class="btn">Movies</button></li>
@@ -26,8 +27,15 @@
             <li><button class="btn">Children</button></li>
             <li><button class="noticon btn"><img src="assets/images/noticon.svg" alt="NOTIFICATION"
                         width="30px"></button></li>
-            <li><button class="pro"><a href="profiles.html"><img src="assets/images/redp.png" alt="PROFILE"
-                            width="30px" height="30px"></a></button></li>
+            <div class="menu">
+                <button class="pro"><img src="assets/images/redp.png" alt="PROFILE" width="30px" height="30px"></button>
+                <div class="dropdown">
+                    <a href="myprof.html"><img src="assets/images/onepeicep.png">Vivaan</a>
+                    <a href="frontman.html"><img src="assets/images/proctp.png">Frontman</a>
+                    <p onclick="clear_loc()" class="logout">Logout</p>
+                </div>
+            </div>
+
         </ul>
     </nav>
     <div class="heading">
@@ -47,8 +55,7 @@
     </div>
 
 
+    <script src="script.js"></script>
 </body>
 
 </html>
-
-

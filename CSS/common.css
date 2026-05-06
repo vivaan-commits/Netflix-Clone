@@ -28,7 +28,8 @@ nav ul {
 }
 
 .logo {
-    margin-right: 2.5rem; /*40*/
+    margin-right: 2.5rem;
+    /*40*/
 }
 
 .btn,
@@ -37,7 +38,8 @@ nav ul {
     color: white;
     border: none;
     cursor: pointer;
-    margin-right: 1.2rem; /*20*/
+    margin-right: 1.2rem;
+    /*20*/
 }
 
 .btn:hover,
@@ -72,24 +74,24 @@ nav ul {
 
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
-  padding: 20px 40px;
-  margin-top: 25px;
-  overflow: visible;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 20px 40px;
+    margin-top: 25px;
+    overflow: visible;
 }
 
 .gallery img {
-  width: 100%;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .gallery img:hover {
-  transform: scale(1.1);
-  z-index: 2;
+    transform: scale(1.1);
+    z-index: 2;
 }
 
 .genre,
@@ -107,10 +109,50 @@ nav ul {
     margin-top: 10vh;
 }
 
-.genre{
+.genre {
     color: grey;
     font-size: 1.7rem;
     margin-left: 2.5rem;
 }
 
 
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgb(24, 23, 23);
+    min-width: 220px;
+    padding: 10px;
+}
+
+.dropdown a , .logout{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown a:hover , .logout:hover{
+    background-color: grey;
+}
+
+.dropdown img {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.menu:hover .dropdown {
+    display: block;
+}
+
+.logout{
+    cursor: pointer;
+}

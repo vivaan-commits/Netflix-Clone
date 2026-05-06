@@ -79,7 +79,31 @@ h6 {
 }
 
 .con {
+    padding: 13px 191px 13px 191px;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+    background-color: #c0181f;
+    text-align: center;
+    border: 1px none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin {
     padding: 13px 185px 13px 185px;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+    background-color: #c0181f;
+    text-align: center;
+    border: 1px none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup {
+    padding: 13px 184px 13px 180px;
     font-size: large;
     font-weight: 600;
     color: white;

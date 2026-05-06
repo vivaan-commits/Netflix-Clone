@@ -96,7 +96,7 @@ nav ul {
     font-size: 30px;
     font-weight: 600;
     color: white;
-    
+
 }
 
 .heading {
@@ -104,3 +104,44 @@ nav ul {
     margin-left: 3.1rem;
 }
 
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgb(24, 23, 23);
+    min-width: 220px;
+    padding: 10px;
+}
+
+.dropdown a, .logout{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown a:hover, .logout:hover{
+    background-color: grey;
+}
+
+.dropdown img {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.menu:hover .dropdown {
+    display: block;
+}
+
+.logout{
+    cursor: pointer;
+}

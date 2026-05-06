@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="CSS/login.css">
 </head>
 
-<body>
+<body onload="get_mail();">
     <nav>
         <ul>
             <li class="logo"><a href="index.html"><img src="assets/images/logo.svg" alt="NETFLIX" width="150px" /></a>
@@ -23,7 +23,7 @@
             <input type="email" class="email" placeholder="  Email" required value="" id="mail"><br>
             <input type="password" class="pass" id="passwd" placeholder="  Password" required>
             <div class="btn">
-                <input type="button" class="con" id="email" value="Sign Up" onclick="signup()">
+                <input type="button" class="signup" id="email" value="Sign Up" onclick="signup()">
 
             </div>
         </form>
@@ -38,23 +38,7 @@
         </div>
     </div>
 
-    <script>
-        function signup(){
-        const mail = document.getElementById("mail").value;
-        const passwd = document.getElementById("passwd").value;
-        let users = JSON.parse(localStorage.getItem("users")) || [];
-
-        users.push({
-            email: mail,
-            password: passwd
-        });
-
-        localStorage.setItem("users", JSON.stringify(users));
-
-        alert("Account Created");
-    }
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

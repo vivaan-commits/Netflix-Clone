@@ -19,10 +19,10 @@
     <div class="sepa"></div>
     <div class="res">
         <h1 class="main-text">Enter your info to Sign In</h1>
-        <form>
+        <form action="null">
             <input type="email" class="email" id="mail" placeholder="  Email" required>
             <div class="btn">
-                <input type="button" class="con" id="email" value="Sign In" onclick="check()">
+                <input type="button" class="signin" id="email" value="Sign In" onclick="is_empty(); save_mail();">
 
             </div>
         </form>
@@ -37,27 +37,7 @@
         </div>
     </div>
 
-    <script>
-        function check() {
-            let users = JSON.parse(localStorage.getItem("users")) || [];
-            let mail = document.getElementById("mail").value;
-
-            let found = false;
-
-            for (let i = 0; i < users.length; i++) {
-                if (users[i].email === mail) {
-                    found = true;
-                    break;
-                }
-            }
-
-            if (found) {
-                window.location.href = "login.html";
-            } else {
-                window.location.href = "sign-up.html";
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
