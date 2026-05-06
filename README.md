@@ -31,7 +31,7 @@ This project replicates the basic UI and functionality of Netflix, including lay
 * User authentication (login/signup)
 * Dynamic content (API integration)
 * Improve UI/UX
-* Basic interactivity using JavaScript
+* Basic interactivity using JavaScript ✅
 
 ## 📌 Note
 
