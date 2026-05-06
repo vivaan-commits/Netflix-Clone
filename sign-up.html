@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix-clone/Login</title>
+    <title>Netflix-clone/Sign-Up</title>
     <link rel="icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="CSS/login.css">
 </head>
@@ -18,12 +18,12 @@
     </nav>
     <div class="sepa"></div>
     <div class="res">
-        <h1 class="main-text" id="text">Enter your info to Login In</h1>
+        <h1 class="main-text" id="text">Enter your info to Sign Up</h1>
         <form>
             <input type="email" class="email" placeholder="  Email" required value="" id="mail"><br>
             <input type="password" class="pass" id="passwd" placeholder="  Password" required>
             <div class="btn">
-                <input type="button" class="con" id="email" value="Login" onclick="login()">
+                <input type="button" class="con" id="email" value="Sign Up" onclick="signup()">
 
             </div>
         </form>
@@ -39,26 +39,21 @@
     </div>
 
     <script>
-        function login() {
-            let mail = document.getElementById("mail").value;
-            let passwd = document.getElementById("passwd").value;
-            let users = JSON.parse(localStorage.getItem("users")) || [];
+        function signup(){
+        const mail = document.getElementById("mail").value;
+        const passwd = document.getElementById("passwd").value;
+        let users = JSON.parse(localStorage.getItem("users")) || [];
 
-            let found = false;
-            for (let i = 0; i < users.length; i++) {
-                if (users[i].email === mail && users[i].password === passwd) {
-                    found = true;
-                    break;
-                }
+        users.push({
+            email: mail,
+            password: passwd
+        });
 
-            }
-            if (found) {
-                window.location.href = "profiles.html";
-            }
-            else {
-                alert("Invalid Credentials");
-            }
-        }
+        localStorage.setItem("users", JSON.stringify(users));
+
+        alert("Account Created");
+    }
+
     </script>
 </body>
 

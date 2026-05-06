@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh; /*200px*/
+    margin-top: 24vh; /*200px*/
     color: white;
     font-size: 50px;
     font-weight: 500;
@@ -33,7 +33,7 @@ body {
 .p2 img,
 .p3 img {
     align-items: center;
-    margin-top: 70px;
+    margin-top: 50px;
     border: 1px none;
     border-radius: 5px;
     height: auto;
@@ -64,7 +64,7 @@ p{
 }
 
 .p1 img:hover, .p2 img:hover, .p3 img:hover{
-    border: 2px solid white;
+    border: 3px solid white;
 }
 
 .p1:hover p, .p2:hover p, .p3:hover p{
