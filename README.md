@@ -24,12 +24,13 @@ This project replicates the basic UI and functionality of Netflix, including lay
 
 * Structuring web pages using HTML
 * Styling and layout techniques using CSS (Flexbox, positioning, responsiveness)
+* Using localStorage of the browser to establish Inter-page connectivity
 * Version control using Git and GitHub
 
 ##  Future Improvements
 
 * Add backend functionality
-* User authentication (login/signup) 
+* User authentication (login/signup) ✅
 * Dynamic content (API integration)
 * Improve UI/UX
 * Basic interactivity using JavaScript ✅
